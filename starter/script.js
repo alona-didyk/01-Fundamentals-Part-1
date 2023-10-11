@@ -89,20 +89,21 @@
 // versions)
 // 3. CreateaBooleanvariable'markHigherBMI'containinginformationabout
 // whether Mark has a higher BMI than John.
-// let markHeight = 1.95;
-// let johnHeight = 1.69;
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
 
-// let markWeight = 78;
-// let johnWeight = 92;
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
 
-// let markBmi = markWeight / (markHeight * markHeight);
-// console.log(markBmi);
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+} else {
+  console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+}
 
-// let johnBmi = johnWeight / (johnHeight * johnHeight);
-// console.log(johnBmi);
-
-// const markHigherBMI = BMIMark > BMIJohn;
-// console.log(BMIMark, BMIJohn);
 // const firstName = "jonas";
 // const job = "teacher";
 // const birthYear = 1991;
@@ -132,25 +133,25 @@
 
 //decisions
 
-const age = 15;
-// const isOldEnough = age >= 18;
+// const age = 15;
+// // const isOldEnough = age >= 18;
 
-//control structure
-if (age >= 18) {
-  console.log("Sarah can start driving license 🥳");
-} else {
-  const yearsLeft = 18 - age;
-  console.log(`Sarah is too young. Wait another ${yearsLeft} years😓`);
-}
+// //control structure
+// if (age >= 18) {
+//   console.log("Sarah can start driving license 🥳");
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(`Sarah is too young. Wait another ${yearsLeft} years😓`);
+// }
 
-const birthYear = 1991;
+// const birthYear = 1991;
 
-//we need to define century because it will not be visible outside of the block
-let century;
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
+// //we need to define century because it will not be visible outside of the block
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
 
-console.log(century);
+// console.log(century);
