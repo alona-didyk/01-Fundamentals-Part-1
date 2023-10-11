@@ -89,17 +89,68 @@
 // versions)
 // 3. CreateaBooleanvariable'markHigherBMI'containinginformationabout
 // whether Mark has a higher BMI than John.
-let markHeight = 1.95;
-let johnHeight = 1.69;
+// let markHeight = 1.95;
+// let johnHeight = 1.69;
 
-let markWeight = 78;
-let johnWeight = 92;
+// let markWeight = 78;
+// let johnWeight = 92;
 
-let markBmi = markWeight / (markHeight * markHeight);
-console.log(markBmi);
+// let markBmi = markWeight / (markHeight * markHeight);
+// console.log(markBmi);
 
-let johnBmi = johnWeight / (johnHeight * johnHeight);
-console.log(johnBmi);
+// let johnBmi = johnWeight / (johnHeight * johnHeight);
+// console.log(johnBmi);
 
-const markHigherBMI = BMIMark > BMIJohn;
-console.log(BMIMark, BMIJohn);
+// const markHigherBMI = BMIMark > BMIJohn;
+// console.log(BMIMark, BMIJohn);
+// const firstName = "jonas";
+// const job = "teacher";
+// const birthYear = 1991;
+// const year = 2037;
+
+// const jonas =
+//   "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+
+// console.log(jonas);
+
+// //template literals
+
+// //insert variables
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log(jonasNew);
+
+// //write couple lines of strings
+// console.log(
+//   "String \n\
+// multiple \n\
+// lines"
+// );
+
+// console.log(`String
+// multiple
+// lines`);
+
+//decisions
+
+const age = 15;
+// const isOldEnough = age >= 18;
+
+//control structure
+if (age >= 18) {
+  console.log("Sarah can start driving license 🥳");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years😓`);
+}
+
+const birthYear = 1991;
+
+//we need to define century because it will not be visible outside of the block
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
