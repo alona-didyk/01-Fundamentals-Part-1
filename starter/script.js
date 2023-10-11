@@ -38,35 +38,44 @@
 // job = "teacher";
 
 //Math operators
-const now = 2037;
+// const now = 2037;
 
 const ageJonas = now - 1991;
 const ageSarah = now - 2020;
-console.log(ageJonas, ageSarah);
+// console.log(ageJonas, ageSarah);
 
-console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power 3 = 2 + 2 + 2
 
 //concatenation
-const firstName = "Anna";
-const lastName = "Jonas";
-console.log(firstName + " " + lastName);
+// const firstName = "Anna";
+// const lastName = "Jonas";
+// console.log(firstName + " " + lastName);
 // ' ' to create an empty space
 
 //assignment operator
-let x = 10 + 5; // 15
-x += 10; // x = x + 10 = 25
-x *= 4; // x = x * 4 = 100
-x++; // x = x + 1
-x--;
-x--;
-console.log(x);
+// let x = 10 + 5; // 15
+// x += 10; // x = x + 10 = 25
+// x *= 4; // x = x * 4 = 100
+// x++; // x = x + 1
+// x--;
+// x--;
+// console.log(x);
 
 // Comparison operators
 
-console.log(ageJonas > ageSarah); // >, <, >=, <=
-console.log(ageSarah >= 18);
+// console.log(ageJonas > ageSarah); // >, <, >=, <=
+// console.log(ageSarah >= 18);
 
-const isFullAge = ageSarah >= 18;
+// const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+
+let x, y;
+
+x = y = 25 - 10 - 5; // x = y = 10
+
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
