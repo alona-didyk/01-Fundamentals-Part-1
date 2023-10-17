@@ -157,28 +157,56 @@
 // console.log(century);
 
 // type conversion
-const inputYear = "1991";
-console.log(Number(inputYear));
-console.log(Number(inputYear) + 18);
+// const inputYear = "1991";
+// console.log(Number(inputYear));
+// console.log(Number(inputYear) + 18);
 
-console.log(Number("Jonas"));
-console.log(typeof NaN); // number, NaN is still a number, just invalid
+// console.log(Number("Jonas"));
+// console.log(typeof NaN); // number, NaN is still a number, just invalid
 
-console.log(String(23));
+// console.log(String(23));
 
-// type coercion
-console.log("I am " + 23 + " years old"); //this plus convert number to a string automatically when there are another strings
+// // type coercion
+// console.log("I am " + 23 + " years old"); //this plus convert number to a string automatically when there are another strings
 
-console.log("23" - "10" - 3); // 10, because the minus operator triggers opposite from plus operator conversion, it convert string to number
+// console.log("23" - "10" - 3); // 10, because the minus operator triggers opposite from plus operator conversion, it convert string to number
 
-console.log("23" * "2"); // the multiplier also converts to numbers
+// console.log("23" * "2"); // the multiplier also converts to numbers
 
-let n = "1" + 1; // '11'
-n = n - 1; // convert '11' to number
-console.log(n); // 10
+// let n = "1" + 1; // '11'
+// n = n - 1; // convert '11' to number
+// console.log(n); // 10
 
-let x = 2 + 3 + 4 + "5";
-console.log(x); // '95'
+// let x = 2 + 3 + 4 + "5";
+// console.log(x); // '95'
 
-let y = "10" - "4" - "3" - 2 + "5";
-console.log(y); // '15'
+// let y = "10" - "4" - "3" - 2 + "5";
+// console.log(y); // '15'
+
+// lesson 21
+
+// falsy values is a values that is not exactly false but will become false when we try to convert them into a boolean
+
+// there are 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0)); // false
+console.log(Boolean("")); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean("Jonas")); // true
+console.log(Boolean({})); // true
+
+// js does type coercion into boolean when: - when using logical operators; - in a logical context like if/else
+
+const money = 100;
+if (money) {
+  console.log("Don't spend it all ;)"); // this will be executed
+} else {
+  console.log("You should get a job");
+}
+
+let height;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED"); // this will be executed
+}
