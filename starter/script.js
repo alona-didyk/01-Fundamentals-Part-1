@@ -189,24 +189,42 @@
 
 // there are 5 falsy values: 0, '', undefined, null, NaN
 
-console.log(Boolean(0)); // false
-console.log(Boolean("")); // false
-console.log(Boolean(undefined)); // false
-console.log(Boolean("Jonas")); // true
-console.log(Boolean({})); // true
+// console.log(Boolean(0)); // false
+// console.log(Boolean("")); // false
+// console.log(Boolean(undefined)); // false
+// console.log(Boolean("Jonas")); // true
+// console.log(Boolean({})); // true
 
-// js does type coercion into boolean when: - when using logical operators; - in a logical context like if/else
+// // js does type coercion into boolean when: - when using logical operators; - in a logical context like if/else
 
-const money = 100;
-if (money) {
-  console.log("Don't spend it all ;)"); // this will be executed
+// const money = 100;
+// if (money) {
+//   console.log("Don't spend it all ;)"); // this will be executed
+// } else {
+//   console.log("You should get a job");
+// }
+
+// let height;
+// if (height) {
+//   console.log("YAY! Height is defined");
+// } else {
+//   console.log("Height is UNDEFINED"); // this will be executed
+// }
+
+const age = 18;
+if (age === 18) console.log("You just became an adult (strict)"); // if 18 is a number, it will be executed, if 18 is a string it wont be executed
+if (age == 18) console.log("You just became an adult (loose)"); // it will be executed in both ways
+
+const favourite = Number(prompt("What is your favourite number?"));
+console.log(favourite);
+
+if (favourite === 23) {
+  // '23' == 23, if === it will not be executed
+  console.log("Cool! 23 is an amazing number");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
 } else {
-  console.log("You should get a job");
+  console.log("number is not 23 or 7");
 }
 
-let height;
-if (height) {
-  console.log("YAY! Height is defined");
-} else {
-  console.log("Height is UNDEFINED"); // this will be executed
-}
+if (favourite !== 23) console.log("Why not 23?");
