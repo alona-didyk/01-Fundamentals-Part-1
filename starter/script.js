@@ -211,20 +211,205 @@
 //   console.log("Height is UNDEFINED"); // this will be executed
 // }
 
-const age = 18;
-if (age === 18) console.log("You just became an adult (strict)"); // if 18 is a number, it will be executed, if 18 is a string it wont be executed
-if (age == 18) console.log("You just became an adult (loose)"); // it will be executed in both ways
+// const age = 18;
+// if (age === 18) console.log("You just became an adult (strict)"); // if 18 is a number, it will be executed, if 18 is a string it wont be executed
+// if (age == 18) console.log("You just became an adult (loose)"); // it will be executed in both ways
 
-const favourite = Number(prompt("What is your favourite number?"));
-console.log(favourite);
+// const favourite = Number(prompt("What is your favourite number?"));
+// console.log(favourite);
 
-if (favourite === 23) {
-  // '23' == 23, if === it will not be executed
-  console.log("Cool! 23 is an amazing number");
-} else if (favourite === 7) {
-  console.log("7 is also a cool number");
-} else {
-  console.log("number is not 23 or 7");
-}
+// if (favourite === 23) {
+//   // '23' == 23, if === it will not be executed
+//   console.log("Cool! 23 is an amazing number");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool number");
+// } else {
+//   console.log("number is not 23 or 7");
+// }
 
-if (favourite !== 23) console.log("Why not 23?");
+// if (favourite !== 23) console.log("Why not 23?");
+
+// basic boolean logic: the and (true when all values are true), or (true when one true) & not (inverts into true/false value) operators
+
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; // B
+
+// console.log(hasDriversLicense && hasGoodVision); // and, true, if one of the value is false the result will be false
+
+// console.log(hasDriversLicense || hasGoodVision); // or, true, if one operator is true the result will be true
+
+// console.log(!hasDriversLicense); // false
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah should drive");
+// } else {
+//   console.log("Someone else should drive");
+// }
+
+// const isTired = true; // C
+
+// console.log(hasDriversLicense || hasGoodVision || isTired); // true, if && and one value is false the rsult will be false
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log("Sarah should drive");
+// } else {
+//   console.log("Someone else should drive");
+// }
+
+// CHALLENGE #3
+// There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+
+// Your tasks:
+
+// 1. Calculate the average score for each team, using the test data included below. The average score for Dolphins should be assigned to the scoreDolphins variable, and the average score of Koalas should be assigned to the scoreKoalas variable.
+
+// 2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+
+// "Dolphins win the trophy" if Dolphins win, or
+
+// "Koalas win the trophy" if Koalas win, or
+
+// "Both win the trophy" if their average scores are equal.
+
+// my solution
+
+// const scoreDolphins = 96
+// const scoreKoalas = 88
+
+// if(scoreDolphins) {
+//     console.log("Dolphins win the trophy")
+// } else if (scoreKoalas) {
+//     console.log("Koalas win the trophy")
+// } else {
+//     console.log("Both win the trophy")
+// }
+
+// their solution
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log('Dolphins win the trophy');
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log('Koalas win the trophy');
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log('Both win the trophy');
+// }
+
+// or
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log("Dolphins win the trophy");
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log("Koalas win the trophy");
+// } else {
+//   console.log("Both win the trophy");
+// }
+
+// const day = prompt("enter day");
+
+// switch (day) {
+//   case "monday": // day === monday, if this true code will be executed
+//     console.log("plan course structure");
+//     console.log("go to coding meetup");
+//     break; // without break code will be executing the next case
+//   case "tuesday":
+//     console.log("prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("write code examples");
+//     break;
+//   case "friday":
+//     console.log("record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("enjoy the weekend");
+//     break;
+//   default:
+//     console.log("not a valid day");
+// }
+
+// if (day === "monday") {
+//   console.log("plan course structure");
+//   console.log("go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("write code examples");
+// } else if (day === "friday") {
+//   console.log("record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("enjoy the weekend");
+// } else {
+//   console.log("not a valid day");
+// }
+
+// expression is a piece of code that produces a value, a words that make a sentence
+// 3 + 4
+// 1991
+// true && false && !false
+
+// statement is a bigger piece of code which is executed and which does not produce a value on itself, like a bigger sentence, that translate all actions that we want to perform
+
+// its a statement, it doesnt produce a value, it simply declares a value
+// if (23 > 10) {
+//   const big = "23 is bigger"; // expression
+// }
+
+// const me = "Jonas";
+// console.log(`i'm ${2037 - 1991} years old ${me}`); // this ${} is a expression, it produces value, we can not enter an if statement since it does not produce a value
+
+// conditional operator allows us to write something similar to if/else statement but all in one line
+
+// operator is an expression, it always produces a value
+// const age = 23;
+// // age >= 18
+// //   ? console.log("I like to drink wine 🍷")
+// //   : console.log("I like to drink water 💧");
+
+// const drink = age >= 18 ? "drink wine 🍷" : "drink water 💧";
+// console.log(drink);
+
+// let drink2;
+
+// if (age >= 18) {
+//   drink2 = "wine 🍷";
+// } else {
+//   drink2 = "water 💧";
+// }
+
+// console.log(drink2);
+
+// console.log(
+//   `I like to drink ${age >= 18 ? "drink wine 🍷" : "drink water 💧"}`
+// );
+
+// Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+// Your tasks:
+
+// Calculate the tip, depending on the bill value. Create a variable called tip for this. It's not allowed to use an if...else statement (if it's easier for you, you can start with an if...else statement, and then try to convert it to a ternary operator).
+
+// Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
+
+// Example: The bill was 275, the tip was 41.25, and the total value 316.25.
+
+// Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
+
+// TEST DATA: Test with different bill values: 275, 40, and 430
+
+const bill = 275;
+
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);
